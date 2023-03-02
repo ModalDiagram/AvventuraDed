@@ -1,5 +1,12 @@
+import Mappabili.Giocatore;
+
 public class Main {
   public static void main(String[] args) {
-    System.out.println("Hello world!");
+    Avventura avventuraProva = new Avventura();
+    Giocatore gandalf = new Giocatore("gandalf");
+    avventuraProva.inizia(gandalf, new Giocatore("bu"));
+    System.out.println(avventuraProva);
+    avventuraProva.muovi(gandalf);
+    System.out.println(avventuraProva);
   }
 }
